@@ -64,5 +64,5 @@ Contributions are welcome! Please follow these steps to contribute:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-Tamsin @ Github: Tamsinlloyd99
-Project Link: [https://github.com/your-username/web-application-ui-design](https://github.com/your-username/web-application-ui-design)
+Github: Tamsinlloyd99
+
