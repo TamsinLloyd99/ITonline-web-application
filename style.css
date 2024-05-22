@@ -19,18 +19,34 @@ header .logo {
     font-size: 1.5em;
 }
 
-header .main-nav a {
+header .search-bar {
+    flex-grow: 0.5;
+    padding: 0.5em;
     margin: 0 1em;
-    color: white;
-    text-decoration: none;
+    border-radius: 4px;
+    border: none;
 }
 
-header .user-profile img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.header-icons {
+    display: flex;
+    gap: 1em;
 }
 
+.header-icons .icon-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.header-icons .icon-item span {
+    font-size: 0.875em; /* Optional, for smaller text */
+}
+
+.fa-solid {
+    font-size: 1.25em; /* Adjust icon size if necessary */
+}
+
+/* Sidebar styles */
 .sidebar {
     width: 200px;
     background-color: #444;
@@ -38,7 +54,28 @@ header .user-profile img {
     position: fixed;
     top: 0;
     bottom: 0;
-    padding-top: 3.5em;
+    padding-top: 4.5em;
+}
+
+.sidebar .menu-item {
+    padding: 1em;
+    text-align: left;
+}
+
+.sidebar .menu-item a,
+.sidebar .menu-item button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar .menu-item button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .sidebar .dropdown {
@@ -46,27 +83,17 @@ header .user-profile img {
 }
 
 .sidebar .dropbtn {
-    width: calc(100% - 30px);
+    /* width: 100%; */
     background-color: #444;
     color: white;
-    padding: 1em;
+    /* padding: 1em; */
     text-align: left;
     border: none;
     cursor: pointer;
     outline: none;
-    display: inline-block;
-}
-
-.sidebar .arrow-btn {
-    width: 30px;
-    background-color: #444;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar .dropdown-content {
@@ -93,7 +120,7 @@ header .user-profile img {
     display: none;
 }
 
-.dropdown-toggle:checked + .arrow-btn + .dropdown-content {
+.dropdown-toggle:checked + .dropbtn + .dropdown-content {
     display: block;
 }
 
@@ -102,8 +129,48 @@ main {
     padding: 2em;
 }
 
-main section {
+main .welcome {
     margin-bottom: 2em;
+}
+
+main .main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .content-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+main .content-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .content-item {
+    flex: 1 1 calc(33.333% - 2em);
+    margin: 1em;
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+main .content-item h2 {
+    margin-top: 0;
+}
+
+.side-widgets {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-widgets > div {
+    background: #f4f4f4;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 4px;
 }
 
 footer {
@@ -132,4 +199,9 @@ footer {
     main {
         margin-left: 0;
     }
+
+    main .content-item {
+        flex: 1 1 100%;
+    }
 }
+
