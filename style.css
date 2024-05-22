@@ -1,9 +1,6 @@
-/* styles.css */
-
-/* Global styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -13,10 +10,15 @@ header {
     padding: 1em;
     background-color: #333;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 header .logo {
-    font-size: 1.5em;
+    font-size: 25px;
 }
 
 header .search-bar {
@@ -55,6 +57,7 @@ header .search-bar {
     top: 0;
     bottom: 0;
     padding-top: 4.5em;
+    overflow-y: auto;
 }
 
 .sidebar .menu-item {
@@ -126,11 +129,35 @@ header .search-bar {
 
 main {
     margin-left: 200px;
-    padding: 2em;
+    padding: 1em;
 }
 
 main .welcome {
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content:flex-start;
+    margin-top: 65px;
+    margin-bottom: 20px;
+    background-color: #868686;
+    padding: 10px;
+}
+main .welcome-header{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    text-align: left;
+}
+
+main .welcome-image{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+main .welcome h1{
+    margin: 0;
 }
 
 main .main-content {
@@ -144,6 +171,11 @@ main .content-header {
     margin-bottom: 2em;
 }
 
+main .content-header img {
+    width: 100%;
+    height: 400px;
+}
+
 main .content-items {
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +183,6 @@ main .content-items {
 
 main .content-item {
     flex: 1 1 calc(33.333% - 2em);
-    margin: 1em;
     background: #f4f4f4;
     padding: 1em;
     border-radius: 4px;
@@ -171,6 +202,16 @@ main .content-item h2 {
     margin: 1em 0;
     padding: 1em;
     border-radius: 4px;
+}
+
+.side-widgets li {
+    margin: 5px;
+}
+
+.top-rated-applications {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px !important;
 }
 
 footer {
