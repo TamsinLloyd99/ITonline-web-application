@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">StockTrader</div>
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Trade</a>
+            <a href="#">News</a>
+        </nav>
+        <div class="user-profile">
+            <img src="profile.jpg" alt="User Profile">
+        </div>
+    </header>
+    <aside class="sidebar">
+        <div class="dropdown">
+            <button class="dropbtn">Dashboard</button>
+            <input type="checkbox" id="dropdown-dashboard" class="dropdown-toggle">
+            <label for="dropdown-dashboard" class="arrow-btn">&#9662;</label>
+            <div class="dropdown-content">
+                <a href="#">Overview</a>
+                <a href="#">Performance</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Market</button>
+            <input type="checkbox" id="dropdown-market" class="dropdown-toggle">
+            <label for="dropdown-market" class="arrow-btn">&#9662;</label>
+            <div class="dropdown-content">
+                <a href="#">Stocks</a>
+                <a href="#">Indices</a>
+                <a href="#">Commodities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Watchlist</button>
+            <input type="checkbox" id="dropdown-watchlist" class="dropdown-toggle">
+            <label for="dropdown-watchlist" class="arrow-btn">&#9662;</label>
+            <div class="dropdown-content">
+                <a href="#">My Watchlist</a>
+                <a href="#">Add Stocks</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Settings</button>
+            <input type="checkbox" id="dropdown-settings" class="dropdown-toggle">
+            <label for="dropdown-settings" class="arrow-btn">&#9662;</label>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="portfolio">
+                <h2>My Portfolio</h2>
+                <!-- Portfolio details -->
+            </div>
+            <div class="market-trends">
+                <h2>Market Trends</h2>
+                <!-- Market trends details -->
+            </div>
+            <div class="recent-news">
+                <h2>Recent News</h2>
+                <!-- Recent news details -->
+            </div>
+        </section>
+        <section class="trading">
+            <h1>Trade</h1>
+            <form class="buy-sell-form">
+                <label for="stock-symbol">Stock Symbol</label>
+                <input type="text" id="stock-symbol" name="stock-symbol">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity">
+                <button type="submit">Buy</button>
+                <button type="submit">Sell</button>
+            </form>
+        </section>
+        <section class="watchlist">
+            <h1>Watchlist</h1>
+            <!-- Watchlist details -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 StockTrader. All rights reserved.</p>
+    </footer>
+</body>
+</html>
